@@ -1,0 +1,7 @@
+{
+  "name": "Julia",
+  "image": "julia:1.6",
+  "extensions": [
+    "julialang.language-julia"
+  ]
+}
