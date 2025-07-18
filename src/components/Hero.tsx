@@ -10,7 +10,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/paramo-cover.jpg"
+        poster="/hero-1.jpg"
         className="absolute w-full h-full object-cover"
       >
         <source src="/planting-pilot.mp4" type="video/mp4" />

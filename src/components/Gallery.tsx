@@ -4,20 +4,12 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
 
-const images = [
-  { src: "/gallery-1.jpg", alt: "Páramo restaurado 1" },
-  { src: "/gallery-2.jpg", alt: "Voluntarios plantando" },
-  { src: "/gallery-3.jpg", alt: "Vivero comunitario" },
-  { src: "/gallery-4.jpg", alt: "Equipo Green Nation" },
-  { src: "/gallery-5.jpg", alt: "Río protegido" },
-  { src: "/gallery-6.jpg", alt: "Panorámica del páramo" },
-];
+const images = Array.from({ length: 6 }, (_, i) => ({
+  src: `/gallery-${i + 1}.jpg`,
+  alt: `Project ${i + 1}`,
+}));
 
-const breakpoints = {
-  default: 3,
-  1100: 2,
-  700: 1,
-};
+const breakpoints = { default: 3, 1100: 2, 700: 1 };
 
 export default function Gallery() {
   const [index, setIndex] = useState(-1);
